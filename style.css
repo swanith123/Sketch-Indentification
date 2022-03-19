@@ -1,0 +1,46 @@
+body{
+font-family: 'Outfit', sans-serif;
+background: rgb(0,255,231);
+background: linear-gradient(90deg, rgba(0,255,231,1) 0%, rgba(14,161,237,1) 50%, rgba(23,83,221,1) 100%);
+color: rgb(73, 70, 70);
+}
+
+#showSketch{
+    float: right;
+    margin-right: 50px;
+    border: 2px solid;
+}
+
+#sketch_identification{
+padding-left: 225px;
+}
+
+.button{
+    width: 200px;
+    font-size: 18px;
+    border: 2px solid;
+}
+
+.p{
+    font-size: 20px;
+    color: white;
+}
+h1{
+    background-color: rgb(248, 85, 10);
+    border: 2px dashed rgb(0, 0, 0);
+    width: 100%;
+}
+
+canvas{
+    border: 5px solid black;
+    border-radius: 20px;
+    animation-name: Sketch_Identification;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+margin-top: 50px;
+}
+
+@keyframes Sketch_Identification{
+from {box-shadow: 1px 1px 38px black;}
+to {box-shadow: 1px 1px 38px white;}
+}
